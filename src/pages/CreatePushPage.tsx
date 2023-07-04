@@ -8,6 +8,7 @@ import { languageListOpts } from "../data/listOptions";
 import { setValue } from "../redux/formReducer";
 import { useSelector, useDispatch } from "react-redux";
 import { DateAndTimeController } from "../components/DateAndTimeController";
+import { useEffect } from "react";
 
 export const CreatePushPage = () => {
   const {
@@ -25,8 +26,11 @@ export const CreatePushPage = () => {
 
   const onSubmit: SubmitHandler<PushFormType> = (data) => {
     dispatch(setValue(data));
-    console.log(stateForm, "VALUES IN STORE");
   };
+
+  useEffect(() => {
+    console.log(stateForm, "VALUES IN STORE");
+  }, [stateForm])
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.wrapper}>
