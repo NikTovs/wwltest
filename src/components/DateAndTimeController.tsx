@@ -20,7 +20,6 @@ export const DateAndTimeController = () => {
     newVal?.forEach((val, index) => {
       if (newVal[index].id === id) {
         newVal[index][type] = value;
-        console.log('NEWVAL', newVal);
       }
     });
   };

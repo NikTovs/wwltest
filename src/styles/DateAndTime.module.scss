@@ -38,6 +38,10 @@
     align-items: center;
     margin-bottom: 12px;
 
+    @media screen and (max-width: 1450px) {
+        flex-direction: column;
+    }
+
     .input {
         width: 210px;
         margin-right: 8px;
