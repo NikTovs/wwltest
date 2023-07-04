@@ -1,0 +1,130 @@
+@import "./variables.scss";
+
+.wrapper {
+  padding: 32px;
+  background-color: $baseDarkColor;
+  width: 100%;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 114px;
+
+  .title {
+    font-size: 32px;
+    color: #989da0;
+    font-weight: 400;
+    margin-bottom: 13px;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
+
+    .button {
+      border-radius: 8px;
+      border: 1px solid #da4649;
+      background: transparent;
+      padding: 12px 24px;
+      color: white;
+      margin-top: 32px;
+      cursor: pointer;
+    }
+
+    .buttonCreate {
+      background: #da4649;
+      margin-left: 28px;
+    }
+  }
+
+  .titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 32px;
+
+    .leftSideTitleContainer {
+      display: flex;
+      align-items: flex-start;
+
+      .subTitle {
+        font-weight: 700;
+        font-size: 32px;
+      }
+
+      img {
+        margin-left: 18px;
+      }
+    }
+
+    .rightSideTitleContainer {
+      .infoBlock {
+        display: flex;
+        .infoImgBlock {
+          margin-right: 12px;
+        }
+
+        .infoDataBlock {
+          display: flex;
+          flex-direction: column;
+
+          .name {
+            font-size: 12px;
+            font-weight: 500;
+            color: #989da0;
+          }
+
+          .value {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #536274;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .inputsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .inputContainer {
+      margin-bottom: 32px;
+      width: 100%;
+    }
+
+    .multipleInputsContainer {
+      display: flex;
+      justify-content: space-between;
+
+      .inputContainer {
+        flex-basis: 46%;
+      }
+
+
+      @media screen and (max-width: 1460px) {
+        flex-direction: column;        
+      }
+    }
+
+    .inputsLeftContainer {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 46%;
+
+    }
+
+    .inputsRightContainer {
+      display: flex;
+      flex-basis: 46%;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

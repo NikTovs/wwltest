@@ -1,0 +1,43 @@
+.selectContainer {
+    display: flex;
+    flex-direction: column;
+
+    .titleContainer {
+        display: flex;
+        align-items: flex-start;
+
+        .label {
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-family: Manrope;
+            font-weight: 600;
+        }
+
+        img {
+            margin-top: 2px;
+            margin-left: 8px;
+        }
+    }
+
+    .select {
+        padding: 12px 20px;
+        width: 100%;
+        border-radius: 4px;
+        background: #323A47;
+        background-image: url('../assets/images/arrow.svg');
+        background-position-x: 94%;
+        background-position-y: center;
+        background-size: 12px;
+        background-repeat: no-repeat;
+        color: white;
+        outline: none;
+        min-width: 230px;
+        cursor: pointer;
+
+        // disable default arrow
+        -moz-appearance:none; /* Firefox */
+        -webkit-appearance:none; /* Safari and Chrome */
+        appearance:none;
+        position: relative;
+    }
+}

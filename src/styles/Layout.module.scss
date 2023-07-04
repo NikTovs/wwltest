@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-image: $backgroundColor;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .sideNav {
+        width: 100%;
+        max-width: 293px;
+        min-width: 200px;
+        background-color: $baseDarkColor;
+        margin-left: 32px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainContent {
+        margin-top: 32px;
+        margin-right: 32px;
+        margin-left: 20px;
+        width: 100%;
+    }
+}

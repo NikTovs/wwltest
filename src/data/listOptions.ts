@@ -1,0 +1,1 @@
+export const languageListOpts = ["Ukr", "Eng"];

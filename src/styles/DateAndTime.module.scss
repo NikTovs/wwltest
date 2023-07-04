@@ -1,0 +1,62 @@
+@import "./variables.scss";
+
+.mainContainer {
+  width: 100%;
+  background-color: #323A47;
+  padding: 12px 20px;
+  margin-bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+    .addData {
+        background: transparent;
+        color: #F0B11C;
+        cursor: pointer;
+        border: 0;
+    }
+
+    .eraseAll {
+        background: transparent;
+        color: #DA4649;
+        cursor: pointer;
+        border: 0;
+    }
+  }
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .input {
+        width: 210px;
+        margin-right: 8px;
+
+        .datePicker {
+            background: #22282F;
+        }
+
+        .timePicker {
+            background: #22282F;
+        }
+    }
+
+    .deleteButton {
+        background: transparent;
+        width: 32px;
+        height: 32px;
+        background: url('../assets/images/Trash.svg');
+        border: none;
+        cursor: pointer;
+    }
+}
